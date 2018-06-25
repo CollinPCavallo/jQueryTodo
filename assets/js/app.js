@@ -18,9 +18,12 @@ $(document).ready(function() {
         if (e.which === 13) {
             var userVal = $(this).val();
             $(this).val('')
-            $('ul').append(`<li><span class="delete">X </span>${userVal}</li>`)
+            $('ul').append(`<li><span class="delete"><i class="fas fa-trash"></i> </span>${userVal}</li>`)
             
         }
     })
+    $("#showInput").click(function () {
+        $("input[type='text']").fadeToggle(200);
+    });
 
 })

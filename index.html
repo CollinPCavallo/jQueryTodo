@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Todo List</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <script src="./assets//js/lib/jquery-3.3.1.min.js"></script>
 </head>
+
 <body>
     <div id="todoContainer">
-        <h1>To-Do List</h1>
+        
+        <h1>To-Do List <span id="showInput"><i class="fa fa-plus"></i></span></h1>
 
-        <input type="text" name="newTodo" id="newTodo">
+        <input type="text" name="newTodo" id="newTodo" placeholder="Add New Todo">
 
         <ul id="todoList">
-            <li><span class="delete">X </span>Item</li>
-            <li><span class="delete">X </span>Item</li>
-            <li><span class="delete">X </span>Item</li>
+            <li>
+                <span class="delete"><i class="fas fa-trash"></i> </span>Item</li>
+            <li>
+                <span class="delete"><i class="fas fa-trash"></i> </span>Item</li>
+            <li>
+                <span class="delete"><i class="fas fa-trash"></i> </span>Item</li>
         </ul>
     </div>
     <script src="./assets//js/app.js"></script>
 </body>
+
 </html>
